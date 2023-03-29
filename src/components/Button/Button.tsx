@@ -1,5 +1,6 @@
 import React, { ButtonHTMLAttributes } from "react";
 import "./Button.scss";
+import ExternalLink from "../../assets/images/external-link.png";
 
 interface button extends ButtonHTMLAttributes<HTMLButtonElement> {
   varient: "primary" | "secondary";
