@@ -36,6 +36,14 @@ body {
   --header-para-color: "#8a8a8a";
   --button-primary: #00ce53;
 }
+.mx {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.pad {
+  padding: 0 64px;
+}
 p {
   font-size: 14px;
   font-family: var(--font-semiBold);
