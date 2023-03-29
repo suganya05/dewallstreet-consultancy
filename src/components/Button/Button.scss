@@ -1,0 +1,20 @@
+.btn {
+  border: none;
+  outline: none;
+  white-space: nowrap;
+}
+.btn-primary {
+  padding: 16px 32px;
+  font-size: 16px;
+  background: #00ce53;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.btn-secondary {
+  padding: 16px 32px;
+  border-radius: 5px;
+  background: #00ce53;
+  border: 1px solid #00ce53;
+  font-size: 16px;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.1));
+  color: #1e1e1e;
+}

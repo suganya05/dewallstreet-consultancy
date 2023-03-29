@@ -1,0 +1,50 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy-Medium";
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0a0a0a;
+  color: #f5f5f5;
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./assets/fonts//Gilroy-Bold.ttf");
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./assets/fonts/Gilroy-Medium.ttf");
+}
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("./assets/fonts/Gilroy-SemiBold.ttf");
+}
+
+:root {
+  --font-bold: "Gilroy-Bold";
+  --font-medium: "Gilroy-Medium";
+  --font-semiBold: "Gilroy-SemiBold";
+  --header-background-color: "#0e0e0e";
+  --header-para-color: "#8a8a8a";
+  --button-primary: #00ce53;
+}
+p {
+  font-size: 14px;
+  font-family: var(--font-semiBold);
+  font-weight: 400;
+  color: #aaaaaa;
+}
+h4 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+}
