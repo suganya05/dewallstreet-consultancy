@@ -1,11 +1,7 @@
 import React from "react";
 
-const Divisions: React.FC = () => {
-  return (
-    <div>
-      <h2>Divisions</h2>
-    </div>
-  );
+const index = () => {
+  return <div>index</div>;
 };
 
-export default Divisions;
+export default index;

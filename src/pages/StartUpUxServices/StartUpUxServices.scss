@@ -1,0 +1,116 @@
+.startUp-ux-wrapper {
+  .startUp-ux-container {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 292px;
+    .first-content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-left: 24px;
+      .ux-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #fff;
+        width: 64px;
+        height: 64px;
+        border-radius: 6px;
+        h1 {
+          font-size: 24px;
+        }
+      }
+      h3 {
+        font-size: 32px;
+        color: #f5f5f5;
+        font-weight: 100;
+      }
+    }
+    .startup-content {
+      padding: 16px 24px;
+      background: #141414;
+      backdrop-filter: blur(16px);
+      width: 220px;
+      height: 90px;
+
+      h2 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 100;
+        letter-spacing: 2px;
+      }
+    }
+  }
+  .second-content {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    gap: 12px;
+    .girl-img {
+      margin-top: 80px;
+      img {
+        max-width: 276px;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    .startup-services-content {
+      .line-code {
+        margin-left: 200px;
+        img {
+          max-width: 782px;
+          width: 100%;
+        }
+      }
+      .IStartUpUxServices {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .startup-cards {
+          border: 1px solid #363637;
+          max-width: 356px;
+          width: 100%;
+          max-height: 472px;
+          height: 100%;
+          padding: 25px;
+
+          .startup-flexContent {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 17px;
+
+            h3 {
+              color: #02d4f8;
+              font-size: 24px;
+              font-weight: 100;
+              white-space: nowrap;
+            }
+          }
+          .prototype-img img {
+            max-width: 308px;
+            width: 100%;
+          }
+          .prototype-content {
+            h5 {
+              font-size: 20px;
+              color: #eeeeee;
+              font-weight: 100;
+              margin-top: 10px;
+            }
+            p {
+              font-size: 16px;
+              margin-top: 8px;
+            }
+            button {
+              padding: 12px 120px;
+              color: #fff;
+              font-size: 14px;
+              margin-top: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

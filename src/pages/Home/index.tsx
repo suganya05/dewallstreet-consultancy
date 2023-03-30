@@ -1,18 +1,25 @@
 import React from "react";
 import RollArrow from "../../assets/images/roll-arrow.png";
 import ExternalLink from "../../assets/images/external-link.png";
+import { IHexagon } from "./Home";
 import "./Home.scss";
 
 const Home: React.FC = () => {
   return (
     <div className="mx">
       <div className="home-container">
-        <video autoPlay loop muted className="background-clip">
-          <source
+        <div className="background-clip">
+          <video
             src="https://ik.imagekit.io/d4cf2o3ja/video.mp4?updatedAt=1680083404680"
-            type="video"
-          />
-        </video>
+            autoPlay
+            loop
+            muted
+            width="100%"
+            height="100%"
+          ></video>
+          <div className="overlay"></div>
+        </div>
+
         <div className="home-wrapper">
           <div className="first-content">
             <h3>We are the best professional service network for all your</h3>
@@ -38,92 +45,67 @@ const Home: React.FC = () => {
               </button>
             </div>
           </div>
+
           <div className="second-content">
             <div className="hexagonArea first">
-              <div className="hexagon">
-                <h3>Product Design</h3>
-              </div>
-              <div className="hexagon">
-                <h3>Digital Transformation</h3>
-              </div>
-              <div className="hexagon">
-                <h3>Community Building</h3>
-              </div>
-              <div className="hexagon">
-                <h3>Management Consultations</h3>
-              </div>
-              <div className="hexagon">
-                <h3>Product Development</h3>
-              </div>
-              <div className="hexagon">
-                <h3>Regulatory Compliancess</h3>
-              </div>
-              <div className="hexagon">
-                <h3>Strategic Deal Transactions</h3>
-              </div>
+              {IHexagon.slice(0, 7).map((f, index) => {
+                return (
+                  <div className="hexagon" key={index}>
+                    <h3>{f}</h3>
+                  </div>
+                );
+              })}
             </div>
 
             <div
               className="hexagonArea second"
-              style={{ transform: "translateY(-26px)" }}
+              style={{ transform: "translateY(-19px)" }}
             >
-              <div className="hexagon">
-                <h3>Private Equity Acquisitions</h3>
-              </div>
-              <div className="hexagon">
-                <h3>Mergers, Acquisitions & Divestitutres</h3>
-              </div>
-              <div className="hexagon">
-                <h3>Business Development</h3>
-              </div>
-              <div className="hexagon">
-                <h3>Investment Portfolios</h3>
-              </div>
-              <div className="hexagon">
-                <h3>Experience Designs</h3>
-              </div>
-              <div className="hexagon">
-                <h3>Culture, Diversity & Inclusion</h3>
-              </div>
+              {IHexagon.slice(8, 14).map((f, index) => {
+                return (
+                  <div className="hexagon" key={index}>
+                    <h3>{f}</h3>
+                  </div>
+                );
+              })}
             </div>
+
             <div
               className="hexagonArea third"
-              style={{ transform: "translateY(-50px)" }}
+              style={{ transform: "translateY(-37px)" }}
             >
-              <div className="hexagon">
-                <h3>Customer Success</h3>
-              </div>
-              <div className="hexagon">
-                <h3>Public Relations</h3>
-              </div>
-              <div className="hexagon">
-                <h3>Human Capital</h3>
-              </div>
-              <div className="hexagon">
-                <h3>Business Licensing</h3>
-              </div>
-              <div className="hexagon">
-                <h3>Digital Marketing</h3>
-              </div>
+              {IHexagon.slice(15, 20).map((f, index) => {
+                return (
+                  <div className="hexagon" key={index}>
+                    <h3>{f}</h3>
+                  </div>
+                );
+              })}
             </div>
+
             <div
               className="hexagonArea four"
-              style={{ transform: "translateY(-72px)" }}
+              style={{ transform: "translateY(-55px)" }}
             >
-              <div className="hexagon">
-                <h3>Networking & Events</h3>
-              </div>
-              <div className="hexagon">
-                <h3>Market Research</h3>
-              </div>
+              {IHexagon.slice(20, 22).map((f, index) => {
+                return (
+                  <div className="hexagon" key={index}>
+                    <h3>{f}</h3>
+                  </div>
+                );
+              })}
             </div>
             <div
               className="hexagonArea five"
-              style={{ transform: "translateY(-95px)" }}
+              style={{ transform: "translateY(-73px)" }}
             >
-              <div className="hexagon">
-                <h3>Tax advisories</h3>
-              </div>
+              {IHexagon.slice(22).map((f, index) => {
+                return (
+                  <div className="hexagon" key={index}>
+                    <h3>{f}</h3>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

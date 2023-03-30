@@ -1,0 +1,73 @@
+.user-experience-wrapper {
+  text-align: center;
+  margin-top: 32px;
+  .ux-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+    margin: 0 auto;
+    h1 {
+      font-size: 38px;
+    }
+  }
+  .user-experience-content {
+    h2 {
+      font-size: 32px;
+      color: #f5f5f5;
+      margin-top: 16px;
+    }
+    h3 {
+      margin-top: 24px;
+      font-size: 28px;
+      font-weight: 100;
+    }
+  }
+  .user-experience-flexContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 22px;
+    .services-icons {
+      width: 174px;
+      height: 174px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.5s ease-in;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        color: #02b2f8;
+        svg path {
+          margin-bottom: 8px;
+
+          fill: #02b2f8;
+        }
+      }
+      svg path {
+        margin-bottom: 8px;
+        &:hover {
+          fill: #02b2f8;
+        }
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: 100;
+        letter-spacing: 0.12px;
+      }
+    }
+
+    .UserExperienceStudioImg img {
+      max-width: 708px;
+      width: 100%;
+    }
+  }
+}

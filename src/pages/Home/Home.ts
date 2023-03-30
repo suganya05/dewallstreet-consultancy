@@ -1,14 +1,25 @@
 export const IHexagon = [
-  {
-    name: "Product Design",
-  },
-  {
-    name: "Digital Transformation",
-  },
-  {
-    name: "Community Building",
-  },
-  {
-    name: "Management Consultations",
-  },
+  "Product Design",
+  "Digital Transformation",
+  "Community Building",
+  "Management Consultations",
+  "Product Development",
+  "Regulatory Compliancess",
+  "Strategic Deal Transactions",
+  "Private Equity Acquisitions",
+  "Private Equity Acquisitions",
+  "Mergers, Acquisitions & Divestitutres",
+  "Business Development",
+  "Investment Portfolios",
+  "Experience Designs",
+  "Culture, Diversity & Inclusion",
+  "Customer Success",
+  "Customer Success",
+  "Public Relations",
+  "Human Capital",
+  "Business Licensing",
+  "Digital Marketing",
+  "Networking & Events",
+  "Market Research",
+  "Tax advisories",
 ];
