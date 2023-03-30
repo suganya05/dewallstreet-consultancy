@@ -1,9 +1,15 @@
 import React from "react";
+import DivisionsCard from "./component/DivisionsCard";
+import "./component/DivisionsCard/DivisionsCard.scss";
+import DivisionsHeader from "./component/DivisionsHeader";
 
 const Divisions: React.FC = () => {
   return (
-    <div>
-      <h2>Divisions</h2>
+    <div className="division-parent">
+      <div className="divisions">
+        <DivisionsHeader />
+        <DivisionsCard />
+      </div>
     </div>
   );
 };
