@@ -1,0 +1,49 @@
+.home-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding: 64px;
+  .first-content {
+    h3 {
+      font-size: 40px;
+    }
+    .a-to-z-content {
+      display: flex;
+      align-items: center;
+      margin-top: 16px;
+      h1 {
+        font-size: 109px;
+      }
+      img {
+        width: 70px;
+      }
+    }
+    h2 {
+      color: #02d4f8;
+      font-size: 64px;
+      margin-top: -32px;
+    }
+    p {
+      color: #fff;
+      margin-top: 44px;
+      line-height: 22px;
+    }
+    .visit-btn {
+      margin-top: 64px;
+      button {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 32px;
+        background: transparent;
+        color: #00ce53;
+        outline: none;
+        border: 1px solid #00ce53;
+        cursor: pointer;
+        font-family: var(--font-bold);
+        img {
+          width: 37px;
+        }
+      }
+    }
+  }
+}
