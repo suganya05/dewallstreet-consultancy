@@ -1,37 +1,55 @@
 .home_page {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+
   .bg_video {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: -1;
     video {
       object-fit: cover;
       width: 100%;
-      height: 100vh;
+      height: 100%;
     }
   }
   .dewall_logo {
-    padding: 44px 467px;
-    max-width: 380px;
+    padding: 64px 467px 93px 467px;
+    max-width: 340px;
     width: 100%;
     height: 100px;
   }
   h3 {
     font-size: 38px;
     font-weight: 600;
-    padding: 73px 420px;
+    padding: 93px 450px 10px 450px;
+    letter-spacing: -0.06em;
   }
   p {
     color: #ffffff;
-    padding: 50px 188px;
+    padding: 50px 148px;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
+  }
+  .a-to-z-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    h1 {
+      font-size: 109px;
+    }
+    img {
+      width: 100px;
+    }
+  }
+  h2 {
+    color: #02d4f8;
+    font-size: 54px;
+    margin-top: -32px;
+    padding-left: 470px;
+    padding-bottom: 56px;
   }
 }

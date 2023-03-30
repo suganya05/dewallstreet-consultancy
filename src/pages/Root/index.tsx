@@ -1,6 +1,9 @@
 import React from "react";
 import logo from "../../assets/images/dewallstreet.svg";
 import "./root.scss";
+import { ReactComponent as RollArrow } from "../../assets/images/roll-arrow-white.svg";
+import LineOfBusinesses from "../../components/LineOfBusinesses";
+
 const Root: React.FC = () => {
   return (
     <>
@@ -20,6 +23,12 @@ const Root: React.FC = () => {
           <div className="">
             <h3>We are the best professional service network for all your</h3>
           </div>
+          <div className="a-to-z-content">
+            <h1>A</h1>
+            <RollArrow />
+            <h1>Z</h1>
+          </div>
+          <h2>business needs.</h2>
           <div>
             <p>
               Dewallstreet Consultancy is a legally structured unit of
@@ -34,6 +43,7 @@ const Root: React.FC = () => {
           </div>
         </div>
       </div>
+      <LineOfBusinesses />
     </>
   );
 };
