@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Root from "./pages/Root";
-import { Home } from "./pages";
 import { Divisions, Home } from "./pages";
 
 const App: React.FC = () => {
