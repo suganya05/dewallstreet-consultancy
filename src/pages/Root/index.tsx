@@ -3,6 +3,7 @@ import logo from "../../assets/images/dewallstreet.svg";
 import "./root.scss";
 import { ReactComponent as RollArrow } from "../../assets/images/roll-arrow-white.svg";
 import LineOfBusinesses from "../../components/LineOfBusinesses";
+import Fotter from "../../components/Fotter";
 
 const Root: React.FC = () => {
   return (
@@ -44,6 +45,7 @@ const Root: React.FC = () => {
         </div>
       </div>
       <LineOfBusinesses />
+      <Fotter />
     </>
   );
 };

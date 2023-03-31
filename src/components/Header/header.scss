@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(10, 10, 10, 0.1);
+  border: 1px solid rgba(30, 30, 30, 0.1);
+  padding: 22px;
+  a {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .menu_bar {
+    display: none;
+  }
+  .dewall_logo {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .header {
+      background: transparent;
+    }
+    .menu_bar {
+      display: block;
+      cursor: pointer;
+      transition: 0.5s;
+      width: 100px;
+      height: 100%;
+      color: black;
+    }
+
+    .dewall_logo {
+      display: block;
+    }
+    .logo {
+      display: none;
+    }
+    .menu {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      top: 70px;
+      left: 0%;
+      width: 50%;
+      gap: 10px;
+      height: 93vh;
+      background-color: #111111;
+      transform: translateX(-105%);
+      transition: 0.5s;
+    }
+
+    .nav_active {
+      transform: translateX(0%);
+      transition: 0.5s;
+    }
+    .finger {
+      .border {
+        display: none;
+      }
+      a {
+        display: none;
+      }
+    }
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 34px;
+  }
+  .finger {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 12px;
+    .border {
+      height: 40px;
+      border: rotate 45deg 1px solid rgba(185, 127, 127, 0.1);
+    }
+  }
+}
