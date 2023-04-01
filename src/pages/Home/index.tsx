@@ -1,6 +1,9 @@
 import React from "react";
 import RollArrow from "../../assets/images/roll-arrow.png";
 import ExternalLink from "../../assets/images/external-link.png";
+import HexagonImgOne from "../../assets/images/hexagon-img-1.png";
+import HexagonImgTwo from "../../assets/images/hexagon-img-2.png";
+import ServiceImg from "../../assets/images/serive_img.png";
 import { IHexagon } from "./Home";
 import "./Home.scss";
 
@@ -45,13 +48,15 @@ const Home: React.FC = () => {
               </button>
             </div>
           </div>
-
           <div className="second-content">
             <div className="hexagonArea first">
               {IHexagon.slice(0, 7).map((f, index) => {
                 return (
-                  <div className="hexagon" key={index}>
-                    <h3>{f}</h3>
+                  <div className="background-img" key={index}>
+                    <img src={HexagonImgOne} alt="" />
+                    <div className="hexagon firstHexagon">
+                      <h3>{f}</h3>
+                    </div>
                   </div>
                 );
               })}
@@ -59,12 +64,16 @@ const Home: React.FC = () => {
 
             <div
               className="hexagonArea second"
-              style={{ transform: "translateY(-19px)" }}
+              style={{ transform: "translateY(-26px)" }}
             >
               {IHexagon.slice(8, 14).map((f, index) => {
                 return (
-                  <div className="hexagon" key={index}>
-                    <h3>{f}</h3>
+                  <div key={index} className="background-img">
+                    <img src={HexagonImgOne} alt="" />
+
+                    <div className="hexagon firstHexagon">
+                      <h3>{f}</h3>
+                    </div>
                   </div>
                 );
               })}
@@ -72,12 +81,16 @@ const Home: React.FC = () => {
 
             <div
               className="hexagonArea third"
-              style={{ transform: "translateY(-37px)" }}
+              style={{ transform: "translateY(-51px)" }}
             >
               {IHexagon.slice(15, 20).map((f, index) => {
                 return (
-                  <div className="hexagon" key={index}>
-                    <h3>{f}</h3>
+                  <div key={index} className="background-img">
+                    <img src={HexagonImgOne} alt="" />
+
+                    <div className="hexagon firstHexagon">
+                      <h3>{f}</h3>
+                    </div>
                   </div>
                 );
               })}
@@ -85,29 +98,297 @@ const Home: React.FC = () => {
 
             <div
               className="hexagonArea four"
-              style={{ transform: "translateY(-55px)" }}
+              style={{ transform: "translateY(-75px)" }}
             >
               {IHexagon.slice(20, 22).map((f, index) => {
                 return (
-                  <div className="hexagon" key={index}>
-                    <h3>{f}</h3>
+                  <div key={index} className="background-img">
+                    <img src={HexagonImgOne} alt="" />
+
+                    <div className="hexagon firstHexagon">
+                      <h3>{f}</h3>
+                    </div>
                   </div>
                 );
               })}
             </div>
             <div
               className="hexagonArea five"
-              style={{ transform: "translateY(-73px)" }}
+              style={{ transform: "translateY(-100px)" }}
             >
               {IHexagon.slice(22).map((f, index) => {
                 return (
-                  <div className="hexagon" key={index}>
-                    <h3>{f}</h3>
+                  <div key={index} className="background-img">
+                    <img src={HexagonImgOne} alt="" />
+                    <div className="hexagon firstHexagon">
+                      <h3>{f}</h3>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            <div className="hexagon-service">
+              <div className="background-img">
+                <img src={ServiceImg} alt="" />
+                <div className="hexagon-add">
+                  <h3>48+</h3>
+                  <p>value added</p>
+                  <p>services</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="hexagon-service-media">
+            <div className="background-img">
+              <img src={HexagonImgTwo} alt="" />
+              <div className="hexagon-add">
+                <h3>48+</h3>
+                <p>value added</p>
+                <p>services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="second-hexagon-area">
+        <div className="hexagonArea first">
+          {IHexagon.slice(0, 2).map((f, index) => {
+            return (
+              <div className="background-img" key={index}>
+                <img src={HexagonImgOne} alt="" />
+                <div className="hexagon firstHexagon">
+                  <h3>{f}</h3>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div
+          className="hexagonArea second"
+          style={{ transform: "translateY(-26px)" }}
+        >
+          {IHexagon.slice(2, 3).map((f, index) => {
+            return (
+              <div key={index} className="background-img">
+                <img src={HexagonImgOne} alt="" />
+
+                <div className="hexagon firstHexagon">
+                  <h3>{f}</h3>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="grid-content-one">
+          <div>
+            <div
+              className="hexagonArea third"
+              style={{ transform: "translateY(-51px)" }}
+            >
+              {IHexagon.slice(3, 5).map((f, index) => {
+                return (
+                  <div key={index} className="background-img">
+                    <img src={HexagonImgOne} alt="" />
+
+                    <div className="hexagon firstHexagon">
+                      <h3>{f}</h3>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div
+              className="hexagonArea four"
+              style={{ transform: "translateY(-75px)" }}
+            >
+              {IHexagon.slice(5, 6).map((f, index) => {
+                return (
+                  <div key={index} className="background-img">
+                    <img src={HexagonImgOne} alt="" />
+
+                    <div className="hexagon firstHexagon">
+                      <h3>{f}</h3>
+                    </div>
                   </div>
                 );
               })}
             </div>
           </div>
+          <div>
+            <div
+              className="hexagonArea four"
+              style={{ transform: "translateY(-55px)" }}
+            >
+              {IHexagon.slice(6, 8).map((f, index) => {
+                return (
+                  <div key={index} className="background-img">
+                    <img src={HexagonImgOne} alt="" />
+
+                    <div className="hexagon firstHexagon">
+                      <h3>{f}</h3>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div
+              className="hexagonArea four"
+              style={{ transform: "translateY(-80px)" }}
+            >
+              {IHexagon.slice(9, 10).map((f, index) => {
+                return (
+                  <div key={index} className="background-img">
+                    <img src={HexagonImgOne} alt="" />
+
+                    <div className="hexagon firstHexagon">
+                      <h3>{f}</h3>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="hexagonArea media-five"
+          style={{ transform: "translateY(-100px)" }}
+        >
+          {IHexagon.slice(10, 12).map((f, index) => {
+            return (
+              <div key={index} className="background-img">
+                <img src={HexagonImgOne} alt="" />
+                <div className="hexagon firstHexagon">
+                  <h3>{f}</h3>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div
+          className="hexagonArea five"
+          style={{ transform: "translateY(-125px)" }}
+        >
+          {IHexagon.slice(12, 13).map((f, index) => {
+            return (
+              <div key={index} className="background-img">
+                <img src={HexagonImgOne} alt="" />
+                <div className="hexagon firstHexagon">
+                  <h3>{f}</h3>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="grid-content-one">
+          <div>
+            <div
+              className="hexagonArea five"
+              style={{ transform: "translateY(-125px)" }}
+            >
+              {IHexagon.slice(13, 15).map((f, index) => {
+                return (
+                  <div key={index} className="background-img">
+                    <img src={HexagonImgOne} alt="" />
+                    <div className="hexagon firstHexagon">
+                      <h3>{f}</h3>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            <div
+              className="hexagonArea five"
+              style={{ transform: "translateY(-150px)" }}
+            >
+              {IHexagon.slice(16, 17).map((f, index) => {
+                return (
+                  <div key={index} className="background-img">
+                    <img src={HexagonImgOne} alt="" />
+                    <div className="hexagon firstHexagon">
+                      <h3>{f}</h3>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div>
+            <div
+              className="hexagonArea five"
+              style={{ transform: "translateY(-125px)" }}
+            >
+              {IHexagon.slice(17, 19).map((f, index) => {
+                return (
+                  <div key={index} className="background-img">
+                    <img src={HexagonImgOne} alt="" />
+                    <div className="hexagon firstHexagon">
+                      <h3>{f}</h3>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            <div
+              className="hexagonArea five"
+              style={{ transform: "translateY(-150px)" }}
+            >
+              {IHexagon.slice(19, 20).map((f, index) => {
+                return (
+                  <div key={index} className="background-img">
+                    <img src={HexagonImgOne} alt="" />
+                    <div className="hexagon firstHexagon">
+                      <h3>{f}</h3>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="hexagonArea five"
+          style={{ transform: "translateY(-125px)" }}
+        >
+          {IHexagon.slice(20, 22).map((f, index) => {
+            return (
+              <div key={index} className="background-img">
+                <img src={HexagonImgOne} alt="" />
+                <div className="hexagon firstHexagon">
+                  <h3>{f}</h3>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <div
+          className="hexagonArea five"
+          style={{ transform: "translateY(-150px)" }}
+        >
+          {IHexagon.slice(22, 23).map((f, index) => {
+            return (
+              <div key={index} className="background-img">
+                <img src={HexagonImgOne} alt="" />
+                <div className="hexagon firstHexagon">
+                  <h3>{f}</h3>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <div className="visit-btn-media">
+          <button>
+            Visit parent company website <img src={ExternalLink} alt="" />
+          </button>
         </div>
       </div>
     </div>

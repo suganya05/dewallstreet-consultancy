@@ -1,0 +1,40 @@
+.business-wrapper {
+  background: linear-gradient(
+    180deg,
+    #111111 29.17%,
+    rgba(37, 37, 37, 0.5) 100%
+  );
+}
+
+.business {
+  max-width: 85%;
+  margin: 0 auto;
+  h1 {
+    padding: 64px 0;
+    letter-spacing: 0.12em;
+  }
+  .advisory-logo {
+    h2 {
+      padding: 16px 0;
+    }
+    p {
+      padding-bottom: 32px;
+    }
+  }
+
+  .business-content-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 204px;
+    border-bottom: 1px solid rgb(54, 53, 53);
+  }
+  .business-content-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 204px;
+    padding: 34px 0;
+  }
+}

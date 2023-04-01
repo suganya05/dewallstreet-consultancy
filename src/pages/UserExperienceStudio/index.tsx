@@ -1,5 +1,7 @@
 import React from "react";
 import UserExperienceStudioImg from "../../assets/images/userExperienceStudioImg.png";
+import UserExperienceImgOne from "../../assets/images/userExperience-img-1.png";
+import UserExperienceImgTwo from "../../assets/images/userExperience-img-2.png";
 import { ReactComponent as UxServiceIcon } from "../../assets/icons/uxService.svg";
 import { ReactComponent as EnterpriseIcon } from "../../assets/icons/enterprise.svg";
 import "./UserExperienceStudio.scss";
@@ -32,6 +34,32 @@ const UserExperienceStudio: React.FC = () => {
               <h3>ENTERPRISE</h3>
               <h3>UX SERVICES</h3>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="UserExperience-content-One">
+        <div className="content-one">
+          <div>
+            <UxServiceIcon />
+            <h3>STARTUP</h3>
+            <h3>UX SERVICES</h3>
+          </div>
+        </div>
+        <div>
+          <img src={UserExperienceImgOne} alt="" />
+        </div>
+      </div>
+
+      <div className="UserExperience-content-One userExperience-two">
+        <div>
+          <img src={UserExperienceImgTwo} alt="" />
+        </div>
+        <div className="content-one">
+          <div>
+            <EnterpriseIcon />
+            <h3>ENTERPRISE</h3>
+            <h3>UX SERVICES</h3>
           </div>
         </div>
       </div>

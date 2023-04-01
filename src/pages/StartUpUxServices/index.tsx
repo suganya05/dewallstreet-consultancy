@@ -23,6 +23,10 @@ const StartUpUxServices: React.FC = () => {
             <h2>STARTUP</h2>
             <h2>UX SERVICES</h2>
           </div>
+
+          <div className="startup-content-media">
+            <h2>STARTUP UX SERVICES</h2>
+          </div>
         </div>
 
         <div className="second-content">
@@ -57,6 +61,18 @@ const StartUpUxServices: React.FC = () => {
                 );
               })}
             </div>
+          </div>
+        </div>
+
+        <div className="media-grid-content">
+          <div className="girl-img-media">
+            <img src={GirlImg} alt="" />
+          </div>
+
+          <div className="vision-btn-media">
+            <p>Need a customize service ?</p>
+            <h5>Let’s bring your vision to life</h5>
+            <Button varient="secondary">Schedule an appointment</Button>
           </div>
         </div>
       </div>
