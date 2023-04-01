@@ -6,7 +6,6 @@ import HexagonImgTwo from "../../assets/images/hexagon-img-2.png";
 import ServiceImg from "../../assets/images/serive_img.png";
 import { IHexagon } from "./Home";
 import "./Home.scss";
-import Header from "../../components/Header";
 
 const Home: React.FC = () => {
   return (
