@@ -1,0 +1,28 @@
+.latest-news {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 64px;
+  gap: 32px;
+  background: url("../../assets/images/black-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .latest-news-divisions {
+    display: flex;
+    .latest-news-columns {
+      display: flex;
+      .first-column {
+        img {
+          width: 100%;
+        }
+      }
+      .second-column {
+        display: flex;
+        flex-direction: column-reverse;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
