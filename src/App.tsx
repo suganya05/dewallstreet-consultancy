@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Root from "./pages/Root";
-import { Divisions, Home } from "./pages";
+import { Divisions, Home, WebDevelopment } from "./pages";
 
 const App: React.FC = () => {
   return (
@@ -10,6 +10,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Root />} />
         <Route path="/home" element={<Home />} />
         <Route path="/divisions" element={<Divisions />} />
+        <Route path="/webdevelopment" element={<WebDevelopment />} />
       </Routes>
     </>
   );

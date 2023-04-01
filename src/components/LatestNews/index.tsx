@@ -11,14 +11,14 @@ const LatestNews = () => {
           <div className="latest-news-columns">
             <div className="first-column">
               <img src={f.firstImage} alt="" />
-              <h1>{f.firstHeading}</h1>
+              <h2>{f.firstHeading}</h2>
               <p>{f.firstContent}</p>
             </div>
             <div className="second-column">
               <img src={f.secondImage} alt="" />
 
               <p>{f.secondContent}</p>
-              <h1>{f.secondHeading}</h1>
+              <h2>{f.secondHeading}</h2>
             </div>
           </div>
         ))}

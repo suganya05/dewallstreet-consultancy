@@ -1,31 +1,51 @@
 import React from "react";
+import Slider from "react-slick";
+
 import { DivisionsData } from "./data";
-import DewallLogo from "../../../../assets/icons/dewall-logo.svg";
-import { ReactComponent as Arrow } from "../../../../assets/icons/arrow-right.svg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./DivisionsCard.scss";
 
+import DewallLogo from "../../../../assets/icons/dewall-logo.svg";
+import { ReactComponent as Arrow } from "../../../../assets/icons/arrow-right.svg";
+
 const DivisionsCard = () => {
+  const settings = {
+    dots: true,
+    arrow: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+  };
+
   return (
-    <div className="division-card">
-      {DivisionsData.map((f, i) => (
-        <div key={i}>
-          <div className="first-layer">
-            <img src={f.icons} alt="" />
-            <img src={DewallLogo} alt="" />
-            <p>{f.title}</p>
-          </div>
-          <div className="second-layer-parent">
-            {f.content.map((f, i) => (
-              <div key={i} className="second-layer">
-                {/* <img src={Arrow} alt="" /> */}
-                <Arrow />
-                <p>{f}</p>
+    <>
+      <div className="division-card">
+        <Slider {...settings}>
+          {DivisionsData.map((f, i) => (
+            <div key={i}>
+              {/* <Slider {...settings}> */}
+              <div className="first-layer">
+                <img src={f.icons} alt="" />
+                <img src={DewallLogo} alt="" />
+                <p>{f.title}</p>
               </div>
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
+              <div className="second-layer-parent">
+                {f.content.map((f, i) => (
+                  <div key={i} className="second-layer">
+                    {/* <img src={Arrow} alt="" /> */}
+                    <Arrow />
+                    <p>{f}</p>
+                  </div>
+                ))}
+              </div>
+              {/* </Slider> */}
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </>
   );
 };
 
