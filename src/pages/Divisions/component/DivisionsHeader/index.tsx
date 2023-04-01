@@ -9,7 +9,7 @@ const DivisionsHeader = () => {
         <img src={Rocket} alt="" />
         <h1>
           The <span> success formula </span> we invented for any business,
-          organization to succeed.
+          organization to succeed <span>.</span>
         </h1>
       </div>
       <div className="division-header-content">

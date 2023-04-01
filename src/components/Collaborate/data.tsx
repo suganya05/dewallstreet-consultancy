@@ -1,11 +1,11 @@
-import { ReactComponent as Transparency } from "../../../../assets/icons/transparency.svg";
-import { ReactComponent as Prototype } from "../../../../assets/icons/blockchain.svg";
-import { ReactComponent as Testins } from "../../../../assets/icons/abtest.svg";
-import { ReactComponent as Responsive } from "../../../../assets/icons/responsive.svg";
-import { ReactComponent as Delivery } from "../../../../assets/icons/delivery-truck.svg";
-import { ReactComponent as Deliverables } from "../../../../assets/icons/gift.svg";
-import { ReactComponent as Engagement } from "../../../../assets/icons/stake.svg";
-import { ReactComponent as Support } from "../../../../assets/icons/customer-service.svg";
+import { ReactComponent as Transparency } from "../../assets/icons/transparency.svg";
+import { ReactComponent as Prototype } from "../../assets/icons/blockchain.svg";
+import { ReactComponent as Testins } from "../../assets/icons/abtest.svg";
+import { ReactComponent as Responsive } from "../../assets/icons/responsive.svg";
+import { ReactComponent as Delivery } from "../../assets/icons/delivery-truck.svg";
+import { ReactComponent as Deliverables } from "../../assets/icons/gift.svg";
+import { ReactComponent as Engagement } from "../../assets/icons/stake.svg";
+import { ReactComponent as Support } from "../../assets/icons/customer-service.svg";
 
 export const CollaborateData = [
   {

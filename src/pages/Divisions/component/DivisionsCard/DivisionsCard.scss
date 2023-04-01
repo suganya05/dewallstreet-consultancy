@@ -1,12 +1,13 @@
 .division-parent {
-  //   background-image: url(../../../../assets/images/bg-divisions.jpg);
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   backdrop-filter: blur(66px);
+  // background-image: url(../../../../assets/images/bg-divisions.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  backdrop-filter: blur(66px);
   .divisions {
     background-image: url(../../../../assets/images/bg-divisions.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    // backdrop-filter: blur(66px);
   }
 }
 
@@ -52,7 +53,7 @@
   padding: 17px 44px;
   gap: 24px;
   background: rgba(0, 0, 0, 0.3);
-  //   backdrop-filter: blur(66px);
+  backdrop-filter: blur(66px);
 
   .first-layer {
     display: flex;
@@ -89,6 +90,16 @@
           color: #fff;
         }
       }
+    }
+  }
+}
+
+.slick-slider {
+  width: 90%;
+  .slick-slide {
+    padding-right: 20px;
+    .slick-slide-arrow {
+      display: none;
     }
   }
 }
