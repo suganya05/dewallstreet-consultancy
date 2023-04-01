@@ -26,7 +26,7 @@ const WebDevelopment = () => {
       <ChallengesAndSolutions />
       <ImproveBuisness />
       <Collaborate title="How we collaborate  with you." textAlign="left" />
-      {/* <LatestNews /> */}
+      <LatestNews />
     </div>
   );
 };

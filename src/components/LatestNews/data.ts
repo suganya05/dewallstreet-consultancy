@@ -24,4 +24,14 @@ export const LatestNewsData = [
     secondContent:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
   },
+  {
+    firstHeading: "Blockchain",
+    firstImage: Third,
+    firstContent:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    secondHeading: "Decentralised Ecommerce",
+    secondImage: Fourth,
+    secondContent:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+  },
 ];

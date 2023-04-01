@@ -16,32 +16,24 @@ const Founder: React.FC = () => {
     arrows: false,
   };
   return (
-    <div>
-      <div className="mx">
-        <div className="founder-section">
-          <div className="hero-slider">
-            <Slider {...settings}>
-              {Data.map((f, index) => {
-                return (
-                  <div className="slider" key={index}>
-                    <h5>{f.heading}</h5>
-                    <div className="founder">
-                      <img src={f.image} />
-                      <div>
-                        <h4>{f.name}</h4>
-                        <h3>{f.position}</h3>
-                      </div>
-                    </div>
-                    <p>{f.discription}</p>
-                    <Button varient="primary">Read casestudy</Button>
-                  </div>
-                );
-              })}
-            </Slider>
+    <Slider {...settings}>
+      {Data.map((f, index) => {
+        return (
+          <div className="slider" key={index}>
+            <h5>{f.heading}</h5>
+            <div className="founder">
+              <img src={f.image} alt="" />
+              <div>
+                <h4>{f.name}</h4>
+                <h3>{f.position}</h3>
+              </div>
+            </div>
+            <p>{f.discription}</p>
+            <Button varient="primary">Read casestudy</Button>
           </div>
-        </div>
-      </div>
-    </div>
+        );
+      })}
+    </Slider>
   );
 };
 

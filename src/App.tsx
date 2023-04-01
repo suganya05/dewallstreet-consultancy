@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { Divisions, Home, WebDevelopment, Root, Impacts } from "./pages";
 import StartUpUxServices from "./pages/StartUpUxServices";
 import UserExperienceStudio from "./pages/UserExperienceStudio";
-import PortFolio from "./components/PortFolio";
 import InterActiveProtoType from "./components/InterActiveProtoType";
 
 const App: React.FC = () => {
