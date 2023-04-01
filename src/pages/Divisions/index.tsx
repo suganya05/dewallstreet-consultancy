@@ -5,12 +5,14 @@ import DivisionsHeader from "./component/DivisionsHeader";
 
 const Divisions: React.FC = () => {
   return (
-    <div className="division-parent">
-      <div className="divisions">
-        <DivisionsHeader />
-        <DivisionsCard />
+    <>
+      <div className="division-parent">
+        <div className="divisions">
+          <DivisionsHeader />
+          <DivisionsCard />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
