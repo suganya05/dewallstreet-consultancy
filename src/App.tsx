@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import { Divisions, Home, WebDevelopment, Root } from "./pages";
 import StartUpUxServices from "./pages/StartUpUxServices";
 import UserExperienceStudio from "./pages/UserExperienceStudio";
-import PortFolio from "./components/PortFolio";
 import InterActiveProtoType from "./components/InterActiveProtoType";
 
 const App: React.FC = () => {
