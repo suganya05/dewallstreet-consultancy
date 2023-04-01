@@ -98,6 +98,15 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .fotter {
+    display: flex;
+    flex-direction: column-reverse;
+    .border-right {
+      display: none;
+    }
+  }
+}
 .connect {
   display: flex;
   justify-content: space-between;
