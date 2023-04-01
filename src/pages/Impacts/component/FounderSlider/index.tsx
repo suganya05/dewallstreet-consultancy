@@ -26,7 +26,7 @@ const Founder: React.FC = () => {
                   <div className="slider" key={index}>
                     <h5>{f.heading}</h5>
                     <div className="founder">
-                      <img src={f.image} />
+                      <img src={f.image} alt="" />
                       <div>
                         <h4>{f.name}</h4>
                         <h3>{f.position}</h3>
