@@ -12,7 +12,6 @@
   }
   .latest-news-divisions {
     display: flex;
-    // justify-content: center;
     // align-items: flex-start;
     margin: 24px 0px 24px 60px;
     gap: 32px;
@@ -47,9 +46,13 @@
           width: 432px;
           height: 300px;
         }
+        h2 {
+          padding: 0px 0 10px;
+        }
       }
       .second-column {
         display: flex;
+        justify-content: space-evenly;
         flex-direction: column-reverse;
 
         img {
