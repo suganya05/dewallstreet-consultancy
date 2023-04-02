@@ -9,7 +9,7 @@ import "./DivisionsCard.scss";
 import DewallLogo from "../../../../assets/icons/dewall-logo.svg";
 import { ReactComponent as Arrow } from "../../../../assets/icons/arrow-right.svg";
 
-const DivisionsCard = () => {
+const DivisionsCard: React.FC = () => {
   const settings = {
     dots: true,
     arrow: false,

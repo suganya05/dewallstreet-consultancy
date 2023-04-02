@@ -1,58 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
+import HorizontalScroll from "react-scroll-horizontal";
 import "./Scrolling.scss";
 
-const list = [
-  { name: "Item 1" },
-  { name: "Item 2" },
-  { name: "Item 3" },
-  { name: "Item 4" },
-  { name: "Item 5" },
-  { name: "Item 5" },
-  { name: "Item 5" },
-  { name: "Item 5" },
-  { name: "Item 5" },
-  { name: "Item 5" },
-];
-
 const Scrolling: React.FC = () => {
-  const [scrollX, setScrollX] = useState(0);
-
-  const handleLeftArrowClick = () => {
-    let x = scrollX + Math.round(window.innerWidth / 2);
-    if (x > 0) {
-      x = 0;
-    }
-    setScrollX(x);
-  };
-
-  const handleRightArrowClick = () => {
-    let x = scrollX - Math.round(window.innerWidth / 2);
-    let listWidth = list.length * 150;
-    if (window.innerWidth - listWidth > x) {
-      x = window.innerWidth - listWidth - 60;
-    }
-    setScrollX(x);
-  };
-
+  const child = { width: `30em`, height: `100%` };
   return (
-    <div>
-      <div>Scrolling</div>
-      <div
-        className="horizontal-scroll-wrapper"
-        style={{ transform: `translateX(${scrollX}px)` }}
-      >
-        {list.map((item, index) => (
-          <div key={index} className="horizontal-scroll-item">
-            {item.name}
-          </div>
-        ))}
-      </div>
-      <div className="left-arrow" onClick={handleLeftArrowClick}>
-        &lt;
-      </div>
-      <div className="right-arrow" onClick={handleRightArrowClick}>
-        &gt;
-      </div>
+    <div className="App">
+      <HorizontalScroll>
+        <div style={child}>
+          <h1>Hello 1</h1>
+        </div>
+        <div style={child}>
+          <h1>Hello 2</h1>
+        </div>
+
+        <div style={child}>
+          <h1>Hello 3</h1>
+        </div>
+      </HorizontalScroll>
     </div>
   );
 };
