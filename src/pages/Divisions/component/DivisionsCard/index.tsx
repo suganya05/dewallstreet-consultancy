@@ -17,6 +17,32 @@ const DivisionsCard = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          dots: true,
+          arrows: false,
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 780,
+        settings: {
+          dots: true,
+          arrows: false,
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          dots: true,
+          arrows: false,
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
