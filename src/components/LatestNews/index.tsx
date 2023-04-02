@@ -1,6 +1,7 @@
 import React from "react";
 import "./LatestNews.scss";
 import { LatestNewsData } from "./data";
+import Button from "../Button/Button";
 
 const LatestNews = () => {
   return (
@@ -22,6 +23,11 @@ const LatestNews = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="button">
+        <Button varient="secondary" style={{ background: "#252525" }}>
+          Go Back
+        </Button>
       </div>
     </div>
   );

@@ -25,7 +25,6 @@ const DivisionsCard: React.FC = () => {
         <Slider {...settings}>
           {DivisionsData.map((f, i) => (
             <div key={i}>
-              {/* <Slider {...settings}> */}
               <div className="first-layer">
                 <img src={f.icons} alt="" />
                 <img src={DewallLogo} alt="" />
@@ -34,13 +33,14 @@ const DivisionsCard: React.FC = () => {
               <div className="second-layer-parent">
                 {f.content.map((f, i) => (
                   <div key={i} className="second-layer">
-                    {/* <img src={Arrow} alt="" /> */}
                     <Arrow />
-                    <p>{f}</p>
+
+                    <div>
+                      <p>{f}</p>
+                    </div>
                   </div>
                 ))}
               </div>
-              {/* </Slider> */}
             </div>
           ))}
         </Slider>

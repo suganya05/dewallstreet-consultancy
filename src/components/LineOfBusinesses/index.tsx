@@ -1,9 +1,10 @@
 import React from "react";
-import Button from "../Button/Button";
 import business from "../../assets/images/businesses.png";
 import Conseltancy from "../../assets/images/conseltancy-logo.svg";
 import advisory from "../../assets/images/advisory.png";
 import advisorylogo from "../../assets/images/advisory-logo.svg";
+import ExternalLink from "../../assets/images/external-link_white.svg";
+
 import "./LineOfBusinesses.scss";
 
 interface IBusiness {
@@ -13,14 +14,16 @@ interface IBusiness {
   button: string;
   image: string;
   position: string;
+  link?: string;
 }
 const DemoBusinesses: React.FC<IBusiness> = ({
   logo,
   title,
   discription,
-  button,
   image,
   position,
+  button,
+  link,
 }) => {
   return (
     <div
@@ -37,7 +40,13 @@ const DemoBusinesses: React.FC<IBusiness> = ({
         <img src={logo} alt="" />
         <h2>{title}</h2>
         <p>{discription}</p>
-        <Button varient="primary">{button}</Button>
+        <div className="visit-btn">
+          <a href={link}>
+            <button>
+              {button} <img src={ExternalLink} alt="" />
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -58,6 +67,7 @@ const LineOfBusinesses: React.FC = () => {
                 title="On demand client services"
                 discription="We are the most reputed consultancy amongst new age market demands and we word for individuals and business on various fixed and hourly fee models."
                 button="Visit Consultancy website"
+                link="/home"
               />
             </div>
             <div className="business-content-right">

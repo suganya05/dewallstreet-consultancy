@@ -7,7 +7,7 @@ import "./PortFolio.scss";
 
 const PortFolio: React.FC = () => {
   return (
-    <div className="portFolio-wrapper">
+    <div className="portFolio-wrapper" id="portfolio">
       <div className="mx">
         <div className="portFolio-head">
           <p>PORTFOLIO</p>
