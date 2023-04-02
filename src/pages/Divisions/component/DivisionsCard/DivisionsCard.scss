@@ -86,9 +86,8 @@
     .second-layer {
       display: flex;
       flex-direction: row;
-      align-items: center;
+      // align-items: center;
       padding: 22px 10px;
-
       background: rgba(0, 0, 0, 0.5);
       backdrop-filter: blur(17px);
       cursor: pointer;

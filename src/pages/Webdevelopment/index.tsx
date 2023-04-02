@@ -5,7 +5,7 @@ import Collaborate from "../../components/Collaborate";
 import LatestNews from "../../components/LatestNews";
 import LogoDark from "../../assets/icons/logo-dark.svg";
 
-const WebDevelopment = () => {
+const WebDevelopment: React.FC = () => {
   return (
     <div>
       <div className="webdevelopment-hero">

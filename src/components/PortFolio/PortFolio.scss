@@ -50,6 +50,9 @@
     grid-template-columns: 1fr 1fr;
     margin-top: 44px;
     gap: 28px;
+    @media (max-width: 580px) {
+      grid-template-columns: 1fr;
+    }
 
     .web-development-video video {
       max-width: 665px;

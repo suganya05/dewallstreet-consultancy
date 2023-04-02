@@ -1,0 +1,65 @@
+.splashscreen {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  z-index: 1000;
+  .splashscreenLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+      width: 100%;
+      max-width: 377px;
+    }
+  }
+  .acessingPort {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .splashContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 15px;
+      div {
+        height: 8px;
+        width: 8px;
+        border-radius: 50px;
+        animation: dotLoaders2 1.5s linear infinite forwards;
+      }
+      @keyframes dotLoaders2 {
+        0% {
+          background: #636363;
+          transform: scale(0.8);
+        }
+        50% {
+          background: #1d1d1d;
+          transform: scale(1.5);
+        }
+        100% {
+          background: #636363;
+          transform: scale(0.8);
+        }
+      }
+      .dot-1 {
+        animation-delay: 0.25s;
+      }
+      .dot-2 {
+        animation-delay: 0.5s;
+      }
+      .dot-3 {
+        animation-delay: 0.75s;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./fotter.scss";
+import "./footer.scss";
 import { ReactComponent as Logo } from "../../assets/icons/dewall-logo.svg";
 import { ReactComponent as Map } from "../../assets/icons/map-pin.svg";
 import { ReactComponent as Mail } from "../../assets/icons/mail.svg";
@@ -10,7 +10,7 @@ import { ReactComponent as Linkedin } from "../../assets/icons/linkedin.svg";
 import { ReactComponent as Telegram } from "../../assets/icons/telegram.svg";
 import { ReactComponent as Rigtarrow } from "../../assets/icons/arrow-right-footer.svg";
 
-const Fotter: React.FC = () => {
+const Footer: React.FC = () => {
   return (
     <>
       <div>
@@ -93,4 +93,4 @@ const Fotter: React.FC = () => {
   );
 };
 
-export default Fotter;
+export default Footer;

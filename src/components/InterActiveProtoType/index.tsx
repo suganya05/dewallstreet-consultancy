@@ -1,14 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ApproachOurProject from "../ApproachOurProject";
 import IdeaToProtoTypeHeader from "../IdeaToProtoTypeHeader";
+import closeUp from "../../assets/icons/arrow-up.svg";
 import "./InterActive.scss";
 import PortFolio from "../PortFolio";
+import Collaborate from "../Collaborate";
 
 const InterActiveProtoType: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+    window.addEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <IdeaToProtoTypeHeader />
-      <div className="inter-active-wrapper">
+      <div className="inter-active-wrapper" id="over-view">
         <div className="mx">
           <div className="inter-active-container">
             <h1>
@@ -21,8 +46,6 @@ const InterActiveProtoType: React.FC = () => {
                 autoPlay
                 loop
                 muted
-                width="100%"
-                height="100%"
               ></video>
             </div>
             <div className="inter-active-flex-content">
@@ -56,6 +79,19 @@ const InterActiveProtoType: React.FC = () => {
       </div>
       <ApproachOurProject />
       <PortFolio />
+      <Collaborate
+        title="You’re one step away from making your ideas into reality."
+        textAlign="center"
+        heading="BENEFITS"
+      />
+
+      <div>
+        {isVisible && (
+          <div className="topButton" onClick={scrollToTop}>
+            <img src={closeUp} alt="" />
+          </div>
+        )}
+      </div>
     </>
   );
 };

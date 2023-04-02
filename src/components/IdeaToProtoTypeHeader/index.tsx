@@ -30,16 +30,16 @@ const IdeaToProtoTypeHeader: React.FC = () => {
 
           <ul className="navigation">
             <li>
-              <a href="#">OVER VIEW</a>
+              <a href="#over-view">OVER VIEW</a>
             </li>
             <li>
-              <a href="#">APPROACH</a>
+              <a href="#approach">APPROACH</a>
             </li>
             <li>
-              <a href="#">PORTFOLIO</a>
+              <a href="#portfolio">PORTFOLIO</a>
             </li>
             <li>
-              <a href="#">BENEFITS</a>
+              <a href="#benefits">BENEFITS</a>
             </li>
             <li>
               <a href="#">TESTIMONIALS</a>

@@ -7,7 +7,7 @@ import "./PortFolio.scss";
 
 const PortFolio: React.FC = () => {
   return (
-    <div className="portFolio-wrapper">
+    <div className="portFolio-wrapper" id="portfolio">
       <div className="mx">
         <div className="portFolio-head">
           <p>PORTFOLIO</p>
@@ -25,11 +25,17 @@ const PortFolio: React.FC = () => {
         <div className="web-development-container">
           <div className="web-development-video">
             <video
-              src="https://ik.imagekit.io/d4cf2o3ja/video.mp4?updatedAt=1680083404680"
               autoPlay
-              loop
               muted
-            ></video>
+              loop
+              playsInline
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            >
+              <source
+                src="https://ik.imagekit.io/d4cf2o3ja/web-development.mp4?updatedAt=1680263299603"
+                type="video/mp4"
+              />
+            </video>
           </div>
           <div className="overflow">
             <div className="web-development-images">

@@ -12,17 +12,59 @@
   h1 {
     padding: 64px 0;
     letter-spacing: 0.12em;
+    @media (max-width: 580px) {
+      font-size: 32px;
+    }
   }
   .advisory {
-    max-width: 100%;
-    height: 100%;
+    img {
+      max-width: 500px;
+    }
+    @media (max-width: 1024px) {
+      display: flex;
+      justify-content: center;
+    }
+    @media (max-width: 580px) {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+    }
   }
   .advisory-logo {
+    @media (max-width: 1024px) {
+      text-align: center;
+      margin-top: 20px;
+    }
     h2 {
       padding: 16px 0;
+      font-weight: 100;
+      font-size: 20px;
     }
     p {
-      padding-bottom: 32px;
+      font-size: 16px;
+    }
+    .visit-btn {
+      margin-bottom: 32px;
+      @media (max-width: 1024px) {
+        display: flex;
+        justify-content: center;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 32px;
+        background: transparent;
+        background: #00ce53;
+        color: #fff;
+        outline: none;
+        border: 1px solid #00ce53;
+        cursor: pointer;
+        font-weight: 100;
+        img {
+          width: 24px;
+        }
+      }
     }
   }
 
@@ -32,6 +74,9 @@
     align-items: center;
     gap: 204px;
     border-bottom: 1px solid rgb(54, 53, 53);
+    @media (max-width: 1024px) {
+      display: block;
+    }
   }
   .business-content-right {
     display: flex;
@@ -40,22 +85,8 @@
     flex-direction: row-reverse;
     gap: 204px;
     padding: 34px 0;
-  }
-  @media (max-width: 868px) {
-    .business-content-right {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 14px;
-      padding: 34px 0;
-    }
-    .business-content-left {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 14px;
-      padding: 34px 0;
-      border-bottom: none;
+    @media (max-width: 1024px) {
+      display: block;
     }
   }
 }

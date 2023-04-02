@@ -2,10 +2,13 @@ import React from "react";
 import "./impacts.scss";
 import members from "../../assets/images/members.png";
 import Founder from "./component/FounderSlider";
+import Header from "../../components/Header";
+import Company from "./component/FounderSlider/Company";
 
 const Impacts: React.FC = () => {
   return (
     <>
+      <Header />
       <div className="impacts-home">
         <div className="mx">
           <div className="impact_hero">
@@ -23,6 +26,8 @@ const Impacts: React.FC = () => {
 
             <Founder />
           </div>
+          <div className="border_bottom"></div>
+          <Company />
         </div>
       </div>
     </>
